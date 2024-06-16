@@ -1,6 +1,6 @@
 MIT License
 
-Copyright (c) 2022 Ernest Rudnicki
+Copyright (c) 2024 Saahir Shaik
 
 Permission is hereby granted, free of charge, to any person obtaining a copy
 of this software and associated documentation files (the "Software"), to deal

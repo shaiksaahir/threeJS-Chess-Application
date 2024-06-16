@@ -1,0 +1,122 @@
+:root {
+  --bg-color: rgb(227, 204, 175);
+  --font-size: 40px;
+  --popup-color: white;
+  --font-size-small: 20px;
+  --border-color: rgb(166, 165, 165);
+  --font-color: black;
+  --font-color-disappear: #00000000;
+  --box-shadow: 0px 0px 5px 0px rgba(66, 68, 90, 1);
+}
+
+html, body, canvas {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  position: relative;
+  font-family: 'Roboto', sans-serif;
+}
+
+canvas { 
+  display: block; 
+}
+
+.center-mid {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.btn {
+  background-color: var(--bg-color);
+  font-size: var(--font-size);
+}
+
+.btn.promotion {
+  margin-left: 8px;
+}
+
+.btn.promotion:last-child {
+  margin-right: 8px;
+}
+
+.end-popup {
+  padding: 10px;
+  background-color: var(--popup-color);
+  font-size: var(--font-size-small);
+  text-align: center;
+  border: 1px solid var(--border-color);
+}
+
+.end-popup-btn {
+  margin-top: 10px;
+  width: 100%;
+  text-align: center;
+}
+
+.btn-small {
+  background-color: var(--bg-color);
+  font-size: var(--font-size-small);
+}
+
+.score {
+ font-size: var(--font-size);
+ position: absolute;
+ min-width: 350px;
+ height: 45px;
+ padding: 2px 10px;
+ background-color: var(--bg-color);
+ border-radius: 3px;
+ border: 1px solid var(--border-color);
+ box-shadow: var(--box-shadow);
+ display: flex;
+}
+
+.score.player-score {
+  bottom: 10px;
+  right: 10px;
+}
+
+.score.opponent-score {
+  top: 10px;
+  left: 10px;
+}
+
+#opponent-turn-notification {
+  position: absolute;
+  top: 10px;
+  right: 30px;
+  font-size: 30px;
+}
+
+#opponent-turn-notification:after {
+  content: ' .';
+  animation: dots 1s steps(5, end) infinite;
+}
+
+@keyframes dots {
+  0%, 20% {
+    color: var(--font-color);
+    text-shadow:
+      .25em 0 0 var(--font-color-disappear),
+      .5em 0 0 var(--font-color-disappear);
+  }
+
+  40% {
+    color: var(--font-color);
+    text-shadow:
+      .25em 0 0 var(--font-color-disappear),
+      .5em 0 0 var(--font-color-disappear);
+  }
+  60% {
+    text-shadow:
+      .25em 0 0 var(--font-color),
+      .5em 0 0 var(--font-color-disappear);
+  }
+
+  80%, 100% {
+    text-shadow:
+      .25em 0 0 var(--font-color),
+      .5em 0 0 var(--font-color);}
+  }

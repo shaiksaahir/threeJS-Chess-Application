@@ -1,8 +1,7 @@
 # Chess-3D
-A small chess game in created in `three.js`. It uses `webpack` as a bundling tool. All the 3D models were created by me in Blender. The game has a simple AI system based on the minimax algorithm with
-alpha beta pruning. In order to not block the main thread (and do not freeze entire application) the AI is instantiated on a `webworker` instance.
+I developed a small chess game using Three.js and Webpack for bundling. All 3D models were crafted in Blender. The game features a straightforward AI system that utilizes the minimax algorithm with alpha-beta pruning. To prevent the main thread from being blocked and to ensure smooth application performance, the AI runs in a separate Web Worker instance.
 
-![Chess 3D](https://user-images.githubusercontent.com/37155981/189495404-d5f2da23-fa9c-49eb-8980-7d8dd977f332.gif)
+
 
 
 Ensure that you have **hardware acceleration** switched on. 

@@ -4,9 +4,8 @@ alpha beta pruning. In order to not block the main thread (and do not freeze ent
 
 ![Chess 3D](https://user-images.githubusercontent.com/37155981/189495404-d5f2da23-fa9c-49eb-8980-7d8dd977f332.gif)
 
-## Deployed version
-#### Important!
-If you are encountering performance issues make sure you have **hardware acceleration** switched on. It will allow the browser to use GPU for rendering which will improve performance significantly. 
+
+Ensure that you have **hardware acceleration** switched on. 
 
 The guides for different browsers are available here:
 [Chrome](https://help.clickup.com/hc/en-us/articles/6327835447191-Enable-hardware-acceleration-in-Google-Chrome) | [Firefox](https://support.mozilla.org/en-US/kb/performance-settings) | [Opera](https://windowsreport.com/opera-browser-hardware-acceleration/)
